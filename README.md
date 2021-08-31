@@ -1,2 +1,5 @@
-# portfolioLamia
-I'll be designing this portfolio for my lovely wife
+git clone
+cd "./path"
+npm i
+npm start
+bingo
