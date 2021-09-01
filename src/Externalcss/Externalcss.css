@@ -32,5 +32,57 @@
     text-decoration: none;
   }
   
-  
+  /* .wrapper{
+    display: flex;
+    align-items: center;
+    text-align: center !important;
+  } */
+  .wrapper .dynamic-txts{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-txts ul {
+    left: 0 !important;
+  }
+  .dynamic-txts li{
+    list-style: none;
+    color: red;
+    /* font-size: 60px; */
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+  .dynamic-txts li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+  }
+  .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 20;
+    /* height: 100%; */
+    /* width: 10%; */
+    background: #343F4F;
+    opacity: 0.5;
+    border-left: 1px solid #FC6D6D;
+    animation: typing 3s steps(40) infinite;
+  }
+  @keyframes typing {
+    60%, 40%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }
   

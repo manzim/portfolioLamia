@@ -14,7 +14,7 @@ function Navbar() {
         borderBottom: `1px solid rgba(255, 255, 255, 0.1)`,
         fontWeight: "bold",
         boxSizing: 'border-box',
-        zIndex: 9,
+        zIndex: 999,
         backgroundColor: '#000000',
     };
 
@@ -124,7 +124,8 @@ function Navbar() {
                             <div className="fl ">
                                 <ul className="pages fl flex flex-column">
                                     <li className="">
-                                        <a                                            
+                                        <a
+                                            href="/#about"                                            
                                             className="f5 pr3 black-80"
                                             onClick={() => { history.push("/#about"); setOpen(false) }}
                                         >
@@ -132,7 +133,8 @@ function Navbar() {
                                         </a>
                                     </li>
                                     <li className="">
-                                        <a                                            
+                                        <a
+                                            href="/#about"                                            
                                             className="f5 pr3 black-80"
                                             onClick={() => { history.push("/#about"); setOpen(false) }}
                                         >
@@ -140,7 +142,8 @@ function Navbar() {
                                         </a>
                                     </li>
                                     <li className="">
-                                        <a                                            
+                                        <a
+                                            href="/#about"                                            
                                             className="f5 pr3 black-80"
                                             onClick={() => { history.push("/#about"); setOpen(false) }}
                                         >
@@ -148,7 +151,8 @@ function Navbar() {
                                         </a>
                                     </li>
                                     <li className="">
-                                        <a                                            
+                                        <a
+                                            href="/#about"                                            
                                             className="f5 pr3 black-80"
                                             onClick={() => { history.push("/#about"); setOpen(false) }}
                                         >
@@ -156,7 +160,8 @@ function Navbar() {
                                         </a>
                                     </li>
                                     <li className="">
-                                        <a                                            
+                                        <a
+                                            href="/#about"                                            
                                             className="f5 pr3 black-80"
                                             onClick={() => { history.push("/#about"); setOpen(false) }}
                                         >
@@ -164,7 +169,8 @@ function Navbar() {
                                         </a>
                                     </li>
                                     <li className="">
-                                        <a                                            
+                                        <a
+                                            href="/#about"                                            
                                             className="f5 pr3 black-80"
                                             onClick={() => { history.push("/#about"); setOpen(false) }}
                                         >
