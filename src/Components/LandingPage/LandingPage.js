@@ -2,7 +2,7 @@ import { Button } from '@blueprintjs/core';
 import React from 'react'
 
 import '../../Externalcss/Externalcss.css'
-import Navbar from '../../NavBar/Navbar';
+// import Navbar from '../../NavBar/Navbar';
 
 function LandingPage() {
     return (

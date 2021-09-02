@@ -19,3 +19,9 @@ hr {
   height: 100%;
   z-index: 1;
 }
+
+.App {
+  background-color: #1FAFED;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
