@@ -1,14 +1,17 @@
-// import { Button } from '@blueprintjs/core'
+
 import React from 'react'
+
+import { Divider } from '@blueprintjs/core'
 
 import './Contact.css'
 
 function Contact() {
     return (
         <div>
-            <div className="_contactme_ cf bp3-card bg-black-10 pa3-l pa3-m pa2">
-                <h2 className="b f2 tc">Contact Me</h2>
-                <footer class="pv4 ph3 tc _contactme_">
+            <div className=" cf pa3-l pa3-m pa2 center w-80-l w-80-m w-90">
+                <h2 className="b f2 tc white ttu underline">Contact Me</h2>
+                <Divider />
+                <footer class="tc bp3-card pv4 ph3 tc _contactme_">
                     <a class="link near-black  dib mh3 tc" href="mailto:manzim.ridwan@gmail.com" title="Gmail">
                         <svg class="dib h2 w2" fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd"

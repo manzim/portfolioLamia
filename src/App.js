@@ -8,6 +8,7 @@ import Particles from "react-particles-js";
 import {particlesOptions} from './ParticleOptions'
 import Contact from './Components/Contact/Contact';
 import Education from './Components/Education/Education';
+import Skillset from './Components/Skills/Skill'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <LandingPage />
       <Navbar />
       <Education />
+      <Skillset />
       <Contact />
       <Footer />
     </div>
