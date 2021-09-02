@@ -44,7 +44,7 @@ function Navbar() {
                         />
                         <Divider className="white b" />
                         <Button
-                            text="Education"
+                            text="Experience"
                             minimal
                             large={false}
                             className="b f5 white _btn_"
