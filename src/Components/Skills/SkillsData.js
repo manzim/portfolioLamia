@@ -180,7 +180,7 @@ export const Skill = {
             link: "https://www.python.org/",
             imgAltText: "Basic Python",
             imgSrc: PYTHON,
-            skillName: "Basic Python",
+            skillName: "Python (basic)",
         },
     ],
     databases: [

@@ -80,18 +80,18 @@ function Education() {
                 <div className="f5 center mb3">
                     {Edu.map((edu, index) => (
                         <div key={index} className="_educard_ grow cf bp3-card br5 shadow-5 flex-l bg-black-10 flex-m items-center-l items-center-m mb2 shadow-5">
-                            <div className="fl h3 w-100 w-50-m w-25-l b tc-l tc-m tl pv4">
+                            <div className="fl f3  w-100 w-50-m w-25-l b tc-l tc-m tl pv2">
                                 {edu.Degree}
                             </div>
-                            <div className="fl h3 w-100 w-50-m w-40-l b tc-l tc-m tl pv4">
+                            <div className="fl f5  w-100 w-50-m w-40-l b tc-l tc-m tl ">
                                 {edu.Institution}
                             </div>
-                            <div className="fl h3 w-100 w-50-m w-20-l tc-l tc-m tl pv4">
+                            <li className="fl f5  w-100 w-50-m w-20-l tc-l tc-m tl ">
                                 {edu.timeline}
-                            </div>
-                            <div className="fl h3 w-100 w-50-m w-20-l tc-l tc-m tl pv4">
+                            </li>
+                            <li className="fl f5  w-100 w-50-m w-20-l tc-l tc-m tl ">
                                 {edu.CGPA}
-                            </div>
+                            </li>
                         </div>
                     ))
                     }
