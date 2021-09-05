@@ -1,0 +1,23 @@
+
+.bottom center {
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: black;
+}
+
+.bottom center span {
+  color: whitesmoke;
+  font-size: medium;
+  font-weight: bold;
+  display: inline;
+  align-items: center !important;
+}
+
+.bottom center a {
+  color: #1FAFED;
+  text-decoration: none;
+}
+
+.bottom center a:hover {
+  text-decoration: underline;
+}

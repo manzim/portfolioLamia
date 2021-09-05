@@ -1,5 +1,9 @@
 ._contactme_ {
     margin-right: auto !important;
     margin-left: auto !important;
+}
 
+._contact_ {
+    background-color: none;
+    backdrop-filter: blur(10px) !important;
 }

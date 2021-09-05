@@ -1,12 +1,17 @@
 import React from 'react'
+import { FaCopyright } from 'react-icons/fa';
+import './Footer.css'
 
 function Footer() {
     return (
-        <div>
-            <div className=" white bg-black-30 b  tc w-100 shadow-1 pa2  h2">
-                © Manzim - {new Date().getFullYear()}
+        <footer>
+            <div className="bottom">
+                <center>
+                    <span className="credit">Created By <a href="./#about">  manzim </a> | </span>
+                    <span className="white b "> <FaCopyright className="white b" />  {new Date().getFullYear()} All rights reserved.</span>
+                </center>
             </div>
-        </div>
+        </footer>
     )
 }
 
