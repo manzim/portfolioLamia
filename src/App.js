@@ -10,6 +10,7 @@ import Contact from './Components/Contact/Contact';
 import Education from './Components/Education/Education';
 import Skillset from './Components/Skills/Skill'
 import Expereince from './Components/Experience/Expereince';
+import Projects from './Components/Projects/Projects';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Education />
       <Expereince />
       <Skillset />
+      <Projects />
       <Contact />
       <Footer />
     </div>

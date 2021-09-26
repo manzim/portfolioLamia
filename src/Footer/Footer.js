@@ -7,7 +7,8 @@ function Footer() {
         <footer>
             <div className="bottom">
                 <center>
-                    <span className="credit">Created By <a href="./#about">  manzim </a> | </span>
+                    <span className="credit">Created By <a href="https://www.linkedin.com/in/ahmed-manzim-ridwan/" target="_blank" rel="noreferrer">
+                        manzim </a> | </span>
                     <span className="white b "> <FaCopyright className="white b" />  {new Date().getFullYear()} All rights reserved.</span>
                 </center>
             </div>
