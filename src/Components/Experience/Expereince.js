@@ -5,6 +5,7 @@ import Tilt from "react-tilt";
 import '../../Externalcss/Externalcss.css'
 
 import psdk from '../../Assets/expereince/psdk.png'
+import rcc from '../../Assets/expereince/rcc.png'
 import company2 from '../../Assets/expereince/deciphertech.svg'
 import { Divider } from '@blueprintjs/core'
 
@@ -17,7 +18,7 @@ function Expereince() {
             companyName: "RensSoft Soln Ltd",
             jodDesignation: "Front-end Developer",
             technology: "React JS, JS, Tachyons, BluePrintJS, TypeScript, basic IndexedDB, HTML, CSS3, basic GraphQL",
-            duration: "March 2020 ~ Present",
+            duration: "March 2020 ~ June 2021",
             developed1: "Multiple features of device responsive website & Software.",
             developed2: "Front end of Doctorkoi Website, making sure of all device responsive as per the mock-up.",
             developed3: "Application small bug fixes, new feature enhancement.",
@@ -34,12 +35,22 @@ function Expereince() {
             developed2: "Importing & enhancing the theme as per requirements.",
             developed3: "Design social media graphical contents.",
             developed4: "Testing the website workflow & bug documentation",
-        }
+        },
+        {
+            imgSrc: rcc,
+            jobTitle: "Teacher",
+            companyName: "Rajshahi Cadet College",
+            jodDesignation: "Part Time ICT Lecturer",
+            technology: "",
+            duration: "January 2018 ~ December 2018",
+            developed4: "ICT Curriculum of class 7-12",
+            developed5: "Lab sessionals teaching practically",
 
+        }
     ]
 
     return (
-        <div>
+        <section id="exp">
             <div className="cf tc center w-70-l w-70-m w-90 _exp_">
                 {companyXP.map((exp, index) => (
                     <Tilt options={{ max: 25 }}>
@@ -55,16 +66,17 @@ function Expereince() {
                             <div className="tc style pa2">
                                 <strong className="b f3">{exp.jodDesignation}</strong>
                                 <br />
-                                <strong>Technology:</strong> {exp.technology}
+                                {exp.technology ? <span> <strong>Technology:</strong> {exp.technology} </span> : '' }
                                 <br />
                                 <strong>Duration:</strong> {exp.duration}
                                 <br />
                                 <strong> # Job Responsibilities #</strong>
                                 <ul className="tl">
-                                    <li><strong>Developed &amp; enhanced</strong> {exp.developed1}</li>
-                                    <li><strong>Developed</strong> {exp.developed2}</li>
-                                    <li><strong>Provided</strong> {exp.developed3}</li>
-                                    <li>{exp.developed4}</li>
+                                   {exp.developed1 ? <li> <strong>Developed &amp; enhanced</strong>  {exp.developed1} </li> : '' }
+                                   {exp.developed2 ? <li> <strong>Developed</strong>  {exp.developed2} </li> : '' }
+                                   {exp.developed3 ? <li> <strong>Provided</strong>  {exp.developed3} </li> : '' }
+                                   {exp.developed4 ? <li>  {exp.developed4}  </li> : '' }
+                                   {exp.developed5 ? <li>  {exp.developed5}  </li> : '' }
                                 </ul>
                             </div>
                         </div>
@@ -73,7 +85,7 @@ function Expereince() {
                 }
 
             </div>
-        </div>
+        </section>
     )
 }
 

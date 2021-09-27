@@ -6,7 +6,7 @@ import '../../Externalcss/Externalcss.css'
 
 function LandingPage() {
     return (
-        <div>
+        <section id="landing" style={{ height: '100vh', overflow: 'hidden' }}>
             <div className="vh-100 dt w-100 _landingpage_"
                 style={{
                     // backgroundImage: 'url(https://image.freepik.com/free-vector/designers-are-working-desing-web-page-web-design-user-interface-user-experience-content-organization_335657-4403.jpg)',
@@ -41,7 +41,7 @@ function LandingPage() {
                 </div>
             </div>
 
-        </div>
+        </section>
     )
 }
 

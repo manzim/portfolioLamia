@@ -1,21 +1,24 @@
 import { Button, ButtonGroup, Divider, Drawer } from '@blueprintjs/core';
-import React, { useEffect, useState,  } from 'react'
+import React, { useEffect, useState, } from 'react'
 import { useHistory } from 'react-router';
 
 import '../Externalcss/Externalcss.css'
+import '../NavBar/Navbar.css'
+import Logo from '../Assets/logo/mylogo.png'
 
 function Navbar() {
 
     const topBarStyle = {
-        top: 0,
+        top: 650,
         alignItems: "center",
         width: "100%",
         // height: '90px',
         borderBottom: `1px solid rgba(255, 255, 255, 0.1)`,
         fontWeight: "bold",
         boxSizing: 'border-box',
-        zIndex: 999,
+        // zIndex: 999,
         backgroundColor: '#000000',
+        position: 'sticky'
     };
 
     useEffect(() => {
@@ -26,67 +29,85 @@ function Navbar() {
     let history = useHistory();
 
     return (
-        <div>
+        <section>
             <div className="cf white dt dt--fixed w-100 shadow-1 pa2 flex items-center center-l center-m w-100 h3-l h3-m h6"
                 style={topBarStyle}>
                 <div className="w-25-m w-25-l w-80 tc-l tc-m tl f5-l f5-m f5 items-center dtc-l dtc-m dtc ">
-                    logo here
+                    <img className="logo mw3" src={Logo} alt="my brand" />
                 </div>
                 <div className="w-70-m w-70-l tr-l tr-m tl f5-l f5-m f5 items-center dtc-l dtc-m dn ">
                     <ButtonGroup minimal={true} >
-                        <Button
-                            text="About"
-                            minimal
-                            large={false}
-                            className="b f5 white _btn_"
-                            intent="none"                            
-                            icon="person"
-                        />
+                        <a href="#about" className="link list">
+                            <Button
+                                text="About"
+                                minimal
+                                large={false}
+                                className="b f5 white _btn_"
+                                intent="none"
+                                icon="person"
+                            />
+                        </a>
+
                         <Divider className="white b" />
-                        <Button
-                            text="Experience"
-                            minimal
-                            large={false}
-                            className="b f5 white _btn_"
-                            intent="none"                            
-                            icon="book"
-                        />
+                        <a href="#education" className="link list">
+                            <Button
+                                text="Education"
+                                minimal
+                                large={false}
+                                className="b f5 white _btn_"
+                                intent="none"
+                                icon="learning"
+                            />
+                        </a>
+
                         <Divider className="white b" />
-                        <Button
-                            text="Skills"
-                            minimal
-                            large={false}
-                            className="b f5 white _btn_"
-                            intent="none"                            
-                            icon="predictive-analysis"
-                        />
+                        <a href="#exp" className="link list">
+                            <Button
+                                text="Experience"
+                                minimal
+                                large={false}
+                                className="b f5 white _btn_"
+                                intent="none"
+                                icon="briefcase"
+                            />
+                        </a>
+
                         <Divider className="white b" />
-                        <Button
-                            text="Projects"
-                            minimal
-                            large={false}
-                            className="b f5 white _btn_"
-                            intent="none"                            
-                            icon="projects"
-                        />
+                        <a href="#projects" className="link list">
+                            <Button
+                                text="Projects"
+                                minimal
+                                large={false}
+                                className="b f5 white _btn_"
+                                intent="none"
+                                icon="projects"
+                            />
+                        </a>
+
                         <Divider className="white b" />
-                        <Button
-                            text="Skills"
-                            minimal
-                            large={false}
-                            className="b f5 white _btn_"
-                            intent="none"                            
-                            icon="predictive-analysis"
-                        />
+                        <a href="#skills" className="link list">
+                            <Button
+                                text="Skills"
+                                minimal
+                                large={false}
+                                className="b f5 white _btn_"
+                                intent="none"
+                                icon="predictive-analysis"
+                            />
+                        </a>
+
                         <Divider className="white b" />
-                        <Button
-                            text="Contact"
-                            minimal
-                            large={false}
-                            className="b f5 white _btn_"
-                            intent="none"                            
-                            icon="chat"
-                        />
+                        <a href="#contactme" className="link list">
+                            <Button
+                                text="Contact"
+                                minimal
+                                large={false}
+                                className="b f5 white _btn_"
+                                intent="none"
+                                icon="chat"
+                            />
+                        </a>
+
                     </ButtonGroup>
                 </div>
                 <div className="w-20 tr f5-l f5-m f5 items-center dn-l dn-m dtc">
@@ -125,54 +146,54 @@ function Navbar() {
                                 <ul className="pages fl flex flex-column">
                                     <li className="">
                                         <a
-                                            href="/#about"                                            
+                                            href="/#about"
                                             className="f5 pr3 black-80"
-                                            onClick={() => { history.push("/#about"); setOpen(false) }}
+                                            onClick={() => { setOpen(false) }}
                                         >
                                             About
                                         </a>
                                     </li>
                                     <li className="">
                                         <a
-                                            href="/#about"                                            
+                                            href="/#education"
                                             className="f5 pr3 black-80"
-                                            onClick={() => { history.push("/#about"); setOpen(false) }}
+                                            onClick={() => { setOpen(false) }}
                                         >
                                             Education
                                         </a>
                                     </li>
                                     <li className="">
                                         <a
-                                            href="/#about"                                            
+                                            href="/#exp"
                                             className="f5 pr3 black-80"
-                                            onClick={() => { history.push("/#about"); setOpen(false) }}
+                                            onClick={() => { setOpen(false) }}
                                         >
                                             Experience
                                         </a>
                                     </li>
                                     <li className="">
                                         <a
-                                            href="/#about"                                            
+                                            href="/#skills"
                                             className="f5 pr3 black-80"
-                                            onClick={() => { history.push("/#about"); setOpen(false) }}
+                                            onClick={() => { setOpen(false) }}
                                         >
                                             Skills
                                         </a>
                                     </li>
                                     <li className="">
                                         <a
-                                            href="/#about"                                            
+                                            href="/#projects"
                                             className="f5 pr3 black-80"
-                                            onClick={() => { history.push("/#about"); setOpen(false) }}
+                                            onClick={() => { setOpen(false) }}
                                         >
                                             Projects
                                         </a>
                                     </li>
                                     <li className="">
                                         <a
-                                            href="/#about"                                            
+                                            href="/#contactme"
                                             className="f5 pr3 black-80"
-                                            onClick={() => { history.push("/#about"); setOpen(false) }}
+                                            onClick={() => { setOpen(false) }}
                                         >
                                             Contact
                                         </a>
@@ -183,7 +204,7 @@ function Navbar() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

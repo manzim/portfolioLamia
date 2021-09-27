@@ -8,7 +8,7 @@ import { FaEnvelope, FaGithub, FaLinkedin, FaFacebook, FaTwitter, FaYoutube, FaS
 
 function Contact() {
     return (
-        <div>
+        <section id="contactme">
             <div className=" cf pa3-l pa3-m pa2 center w-80-l w-80-m w-90">
                 <h2 className="b f2 tc white ttu underline">Contact Me</h2>
                 <Divider />
@@ -49,7 +49,7 @@ function Contact() {
                     </a>
                 </footer>
             </div>
-        </div >
+        </section >
     )
 }
 

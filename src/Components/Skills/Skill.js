@@ -11,7 +11,7 @@ export default function Skillset() {
     let history = useHistory();
 
     return (
-        <div className="pt3 pb3" id="skills">
+        <section className="pt3 pb3" id="skills">
             <h1 className="tc b pb2 ttu underline white">Technical Skills</h1>
             <div class="dt-l dt-m dt--fixed-l dt--fixed-m center w-90-l w-90-m w-90">
                 <div class="bp3-card br3 grow dtc-l dtc-m tc pv4 m2 bg-black-10">
@@ -79,7 +79,7 @@ export default function Skillset() {
                 </div>
                 <div class="w-10 br3 grow dtc-l dtc-m tc pv4"> </div>
                 <div class="bp3-card br3 grow dtc-l dtc-m tc pv4 m2 bg-black-10">
-                    <p className="b f3 black"> Others</p>
+                    <p className="b f3 black"> SEO & Others</p>
                     <Divider />
                     {Skill.others.map((skl, index) => (
                         <div key={index} className="f5 grow flex items-center tl" onClick={() => history.push(skl.link)}>
@@ -104,6 +104,6 @@ export default function Skillset() {
                     }
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

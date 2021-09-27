@@ -67,7 +67,8 @@ function Projects() {
     ]
 
     return (
-        <>
+        <section id="projects">
+
             <h2 className="b white underline ttu mt5 mb3 center tc f2">Projects </h2>
             <section class="projects" id="projects">
                 {projectsdone.map((project, index) => (
@@ -83,20 +84,26 @@ function Projects() {
                                     </a>
                                     : ''
                                 }
-                                
-                                <a className="fa_btn" href={project.videolink} target="_blank" rel="noreferrer" >
-                                    <span class="i grow"  > <FaVideo className="b" /> </span>
-                                </a>
-                                <a className="fa_btn" href={project.watchlive} target="_blank" rel="noreferrer" >
-                                    <span class="i grow"  > <FaSatellite className="b" /> </span>
-                                </a>
+                                {project.videolink ?
+                                    <a className="fa_btn" href={project.videolink} target="_blank" rel="noreferrer" >
+                                        <span class="i grow"  > <FaVideo className="b" /> </span>
+                                    </a>
+                                    : ''
+                                }
+                                {project.watchlive ?
+                                    <a className="fa_btn" href={project.watchlive} target="_blank" rel="noreferrer" >
+                                        <span class="i grow"  > <FaSatellite className="b" /> </span>
+                                    </a>
+                                    : ''
+                                }
+
                             </div>
                         </div>
                     </div>
                 ))
                 }
             </section>
-        </>
+        </section>
     )
 }
 

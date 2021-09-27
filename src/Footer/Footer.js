@@ -5,7 +5,7 @@ import './Footer.css'
 function Footer() {
     return (
         <footer>
-            <div className="bottom">
+            <div id="footer" className="bottom">
                 <center>
                     <span className="credit">Created By <a href="https://www.linkedin.com/in/ahmed-manzim-ridwan/" target="_blank" rel="noreferrer">
                         manzim </a> | </span>
