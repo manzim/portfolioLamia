@@ -52,6 +52,7 @@ function Expereince() {
     return (
         <section id="exp">
             <div className="cf tc center w-70-l w-70-m w-90 _exp_">
+                <h2 className="b f2 tc white ttu underline">Expereince</h2>
                 {companyXP.map((exp, index) => (
                     <Tilt options={{ max: 25 }}>
                         <div className="bp3-card mb5-l mb5-m mb4 lh-copy _expcard_ shadow-5 _imgcompany_" key={index}>
@@ -66,17 +67,17 @@ function Expereince() {
                             <div className="tc style pa2">
                                 <strong className="b f3">{exp.jodDesignation}</strong>
                                 <br />
-                                {exp.technology ? <span> <strong>Technology:</strong> {exp.technology} </span> : '' }
+                                {exp.technology ? <span> <strong>Technology:</strong> {exp.technology} </span> : ''}
                                 <br />
                                 <strong>Duration:</strong> {exp.duration}
                                 <br />
                                 <strong> # Job Responsibilities #</strong>
                                 <ul className="tl">
-                                   {exp.developed1 ? <li> <strong>Developed &amp; enhanced</strong>  {exp.developed1} </li> : '' }
-                                   {exp.developed2 ? <li> <strong>Developed</strong>  {exp.developed2} </li> : '' }
-                                   {exp.developed3 ? <li> <strong>Provided</strong>  {exp.developed3} </li> : '' }
-                                   {exp.developed4 ? <li>  {exp.developed4}  </li> : '' }
-                                   {exp.developed5 ? <li>  {exp.developed5}  </li> : '' }
+                                    {exp.developed1 ? <li> <strong>Developed &amp; enhanced</strong>  {exp.developed1} </li> : ''}
+                                    {exp.developed2 ? <li> <strong>Developed</strong>  {exp.developed2} </li> : ''}
+                                    {exp.developed3 ? <li> <strong>Provided</strong>  {exp.developed3} </li> : ''}
+                                    {exp.developed4 ? <li>  {exp.developed4}  </li> : ''}
+                                    {exp.developed5 ? <li>  {exp.developed5}  </li> : ''}
                                 </ul>
                             </div>
                         </div>

@@ -12,7 +12,7 @@ export default function Skillset() {
 
     return (
         <section className="pt3 pb3" id="skills">
-            <h1 className="tc b pb2 ttu underline white">Technical Skills</h1>
+            <h2 className="b f2 tc white ttu underline">Technical Skills</h2>
             <div class="dt-l dt-m dt--fixed-l dt--fixed-m center w-90-l w-90-m w-90">
                 <div class="bp3-card br3 grow dtc-l dtc-m tc pv4 m2 bg-black-10">
                     <p className="b f3 black"> Front End</p>
