@@ -1,34 +1,122 @@
-._landingpage_ {
-  position: sticky !important;
-  top: 0px !important;
+a {
+	text-decoration: none;
+	opacity: 0.75;
+	color: #fff;
 }
 
-.glow-on-hover:active {
-  color: #fff  !important
+a:hover {
+	opacity: 0.75;
 }
 
-.glow-on-hover:active:after {
-  background: transparent !important;
+a.btn {
+	border-radius: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	background-color: #fafafa;
+  border-color: whitesmoke !important;
+	opacity: 1;
+	transition: all 400ms;
 }
 
-.glow-on-hover:hover:before {
-  opacity: 1  !important;
+a.btn:hover {
+	background-color: #e4e8e5; /* btn hover korar color change korte hobe */
+  color: black !important;
+  border: solid 5px black;
+  font-size: 15px;
+  font-weight: 700;
 }
 
-.glow-on-hover:after {
-  z-index: -1;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  left: 0;
-  top: 0;
-  border-radius: 18px  !important;
+a.btn:focus {
+  outline: none !important;
 }
 
-@keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* padding: 100px 80px; */
+}
+/* 
+@media (max-width: 800px) {
+	section {
+		padding: 50px 20px;
+	}
+} */
+
+/*Header Styles*/
+
+@keyframes fadein {
+	100% {
+		opacity: 1;
+	}
+}
+
+/*Hero Styles*/
+
+.hero {
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	min-height: 100vh;
+	color: #fff;
+}
+
+.hero .background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fafafa;
+	z-index: -1;
+	background-color: #80a3db;
+}
+
+.hero h1 {
+	font: 72px "Amatic SC", sans-serif;
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+	margin-bottom: 15px;
+}
+
+.hero h3 {
+	font: 28px "Raleway", sans-serif;
+	font-weight: 300;
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+	margin-bottom: 40px;
+}
+
+.hero a.btn {
+	padding: 20px 46px;
+}
+
+.hero-content-area {
+	opacity: 0;
+	margin-top: 100px;
+	animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+	100% {
+		opacity: 1;
+		margin: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	.hero {
+		min-height: 600px;
+	}
+
+	.hero h1 {
+		font-size: 48px;
+	}
+
+	.hero h3 {
+		font-size: 24px;
+	}
+
+	.hero a.btn {
+		padding: 15px 40px;
+	}
 }

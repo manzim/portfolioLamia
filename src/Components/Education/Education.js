@@ -12,13 +12,13 @@ function Education() {
             Degree: 'MBA Professionals',
             Institution: "Bangladesh University of Professionals",
             timeline: '2021 to Present',
-            CGPA: '4.00',
+            CGPA: '3.79',
         },
         {
             Degree: 'B.Sc Engineering',
             Institution: "Rajshahi University of Engineering & Technology",
             timeline: '2013 ~ 2018',
-            CGPA: '3.75',
+            CGPA: '',
         },
         {
             Degree: 'HSC',
@@ -37,6 +37,7 @@ function Education() {
 
     return (
         <div id="about">
+            <h2 className="ttu b tc underline f1 white">About Me</h2>
             <div className="_education_ w-80-l pa2 dt center pt0 pb2 pv4-m pv5-l m pv4-m">
                 <div className="db dtc-l w-40-l w-40-m w-90 db dtc-m v-mid-l v-top-m center pt3 pb3 pt0-l pb0-l pt0-l pb0-l mr3">
                     <img
@@ -71,23 +72,23 @@ function Education() {
                     <div className="center flex-l flex-m flex-row-l justify-around pa2 f5 pl0">
                         <a href='/#contactme'
                             className="center list pa2 pa0-l pa0-m w-50 w-90-l w-90-m link no-underline">
-                            <Button className="pa2 w-100 w-80-l w-80-m _hiremebtn_" text="hire me" intent="none" />
+                            <Button className="pa2 mb2 mb0-l mb0-m w-100 w-80-l w-80-m _hiremebtn_" text="hire me" intent="none" />
                         </a>
 
                         <a href='https://drive.google.com/file/d/1vb0ct_jei6Ufmt6JdZfe5KUfGICYPUDr/view?usp=sharing'
                             target="_blank" rel="noreferrer"
                             className="center list pa2 pa0-l pa0-m w-50 w-90-l w-90-m link no-underline">
-                            <Button className="pa2 w-100 w-80-l w-80-m " text="My Resume" intent="success" />
+                            <Button className="pa2 mb2 mb0-l mb0-m w-100 w-80-l w-80-m " text="My Resume" intent="success" />
                         </a>
 
                         <a href="https://github.com/manzim/"
                             className="center list pa2 pa0-l pa0-m w-50 w-90-l w-90-m link no-underline">
-                            <Button className="pa2 w-100 w-80-l w-80-m _githubbtn_ " text="GitHub" intent="none" />
+                            <Button className="pa2 mb2 mb0-l mb0-m w-100 w-80-l w-80-m _githubbtn_ " text="GitHub" intent="none" />
                         </a>
 
                         <a href="/https://www.linkedin.com/in/ahmed-manzim-ridwan/"
                             className="center list pa2 pa0-l pa0-m w-50 w-90-l w-90-m link no-underline">
-                            <Button className="pa2 w-100 w-80-l w-80-m _linkedinbtn_" text="LinkedIn" intent="primary" />
+                            <Button className="pa2 mb2 mb0-l mb0-m w-100 w-80-l w-80-m _linkedinbtn_" text="LinkedIn" intent="primary" />
                         </a>
 
                     </div>
@@ -108,16 +109,18 @@ function Education() {
                             <li className="fl f5  w-100 w-50-m w-20-l tc-l tc-m tl ">
                                 {edu.timeline}
                             </li>
-                            <li className="fl f5  w-100 w-50-m w-20-l tc-l tc-m tl ">
-                                {edu.CGPA}
-                            </li>
+                            {edu.CGPA ?
+                                <li className="fl f5  w-100 w-50-m w-20-l tc-l tc-m tl ">
+                                    GPA/CGPA: {edu.CGPA}
+                                </li> : ''
+                            }
                         </div>
                     ))
                     }
                 </div>
                 <hr /> <Divider />
             </div>
-        </div>
+        </div >
     )
 }
 
