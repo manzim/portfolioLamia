@@ -7,3 +7,28 @@
     background-color: none;
     backdrop-filter: blur(10px) !important;
 }
+
+a {
+    color: #000000 !important;
+    text-decoration: none !important;
+}
+
+a:visited {
+    color: #000000 !important;
+    text-decoration: none !important
+}
+
+a:hover {
+    color: #000000 !important;
+    text-decoration: none !important
+}
+
+a:active {
+    color: #000000 !important;
+    text-decoration: none !important
+}
+
+._icon_:hover {
+    background-color: aqua !important;
+    border-radius: 15px;
+}

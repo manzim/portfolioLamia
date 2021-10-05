@@ -1,5 +1,12 @@
-.a {
-  text-decoration: none;
+a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+._name_ {
+  color: white !important;
+}
+._name_:hover {
+  color: #1FAFED !important;
 }
 .bottom center {
   padding: 5px;
@@ -8,18 +15,9 @@
 }
 
 .bottom center span {
-  color: whitesmoke;
+  color: whitesmoke !important;
   font-size: medium;
   font-weight: bold;
   display: inline;
   align-items: center !important;
-}
-
-.bottom center a {
-  color: #1FAFED;
-  text-decoration: none;
-}
-
-.bottom center a:hover {
-  text-decoration: underline;
 }

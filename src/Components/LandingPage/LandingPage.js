@@ -1,12 +1,14 @@
 import { Button } from '@blueprintjs/core';
 import React from 'react'
+import { useHistory } from 'react-router';
 
 import '../../Externalcss/Externalcss.css'
-// import Navbar from '../../NavBar/Navbar';
+// import './LandingPage.css'
 
 function LandingPage() {
+    let history = useHistory()
     return (
-        <section id="landing" style={{ height: '100vh', overflow: 'hidden' }}>
+        <section id="landing">
             <div className="vh-100 dt w-100 _landingpage_"
                 style={{
                     // backgroundImage: 'url(https://image.freepik.com/free-vector/designers-are-working-desing-web-page-web-design-user-interface-user-experience-content-organization_335657-4403.jpg)',
@@ -27,16 +29,12 @@ function LandingPage() {
                             <li><span>YouTuber</span></li>
                         </ul>
                     </div>
-                    <Button
-                        text="visit my portfolio"
-                        large
-                        outlined
-                        intent="danger"
-                        rightIcon="arrow-down"
-                        className="b f3 white pointer"
-                        onClick = { () => window.scrollY('100vh')}
-                        // style={{ zIndex: 777}}
-                    />
+                    <a href="#about" className="center tc pointer">
+                        <button class="glow-on-hover" type="button">
+                            HOVER ME, THEN CLICK ME!
+                        </button>
+                    </a>
+
                     {/* <button onClick={() => window.location('https://manzim-portfolio.herokuapp.com/')}> hi </button> */}
                 </div>
             </div>

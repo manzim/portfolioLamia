@@ -7,8 +7,17 @@ function Footer() {
         <footer>
             <div id="footer" className="bottom">
                 <center>
-                    <span className="credit">Created By <a href="https://www.linkedin.com/in/ahmed-manzim-ridwan/" target="_blank" rel="noreferrer">
-                        manzim </a> | </span>
+                    <span className="whtie ">Created By
+                        <a
+                            href="https://www.linkedin.com/in/ahmed-manzim-ridwan/"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="_name_"
+                        >
+                            {' '} manzim {' '}
+                        </a>
+                        |
+                    </span>
                     <span className="white b "> <FaCopyright className="white b" />  {new Date().getFullYear()} All rights reserved.</span>
                 </center>
             </div>

@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
     
-      <Particles className="particles particles-box" params={particlesOptions} />
+      {/* <Particles className="particles particles-box" params={particlesOptions} /> */}
       <LandingPage />
       <Navbar />
       <Education />

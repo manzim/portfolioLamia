@@ -1,5 +1,15 @@
+
 ._btn_ {
   color: #ffffff !important;
+}
+._githubbtn_{
+  background-color: #161B22 !important;
+  color: #ffffff !important;
+  font-weight: medium !important;
+}
+
+.bp3-button:not([class*="bp3-intent-"]) {
+  background-image: none !important;
 }
 
 .bp3-divider {
