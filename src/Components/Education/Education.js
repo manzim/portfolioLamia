@@ -48,7 +48,7 @@ function Education() {
                 </div>
                 <div className="db dtc-l w-10-l w-10-m w-00 db dtc-m v-mid-l v-top-m mr3"> </div>
 
-                <div className="bp3-card db dtc-l db dtc-m v-top w-50-l w-60-m w-90 center ph2 pr0-l pl3-l ph2 pr0-l pl3-m">
+                <div className="bp3-card db dtc-l db dtc-m v-top w-50-l w-60-m w-90 center ph2 pr0-l pl3-l ph2 pr0-l pl3-m ">
                     <p className="lh-copy tl f5">
                         <strong className="ttu f4 b underline lh-copy">Education:</strong>
                         <li className="f5 pl1 ml4-l ml4-m ml2"> <strong> SSC: </strong> Pabna Cadet College</li>
@@ -82,11 +82,13 @@ function Education() {
                         </a>
 
                         <a href="https://github.com/manzim/"
+                            target="_blank" rel="noreferrer"
                             className="center list pa2 pa0-l pa0-m w-50 w-90-l w-90-m link no-underline">
                             <Button className="pa2 mb2 mb0-l mb0-m w-100 w-80-l w-80-m _githubbtn_ " text="GitHub" intent="none" />
                         </a>
 
                         <a href="/https://www.linkedin.com/in/ahmed-manzim-ridwan/"
+                            target="_blank" rel="noreferrer"
                             className="center list pa2 pa0-l pa0-m w-50 w-90-l w-90-m link no-underline">
                             <Button className="pa2 mb2 mb0-l mb0-m w-100 w-80-l w-80-m _linkedinbtn_" text="LinkedIn" intent="primary" />
                         </a>

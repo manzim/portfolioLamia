@@ -25,7 +25,7 @@ function Navbar() {
     const [open, setOpen] = useState(false);
     let history = useHistory();
 
-    function scrollToTop() {
+    const scrollToTop = () => {
         window.scrollTo({
             top: 0,
             left: 0,
@@ -42,7 +42,7 @@ function Navbar() {
             <div className="cf white dt dt--fixed w-100 shadow-1 pa2 flex items-center center-l center-m w-100 h3-l h3-m h6"
                 style={topBarStyle}>
                 <div className="w-25-m w-25-l w-80 tc-l tc-m tl f5-l f5-m f5 items-center dtc-l dtc-m dtc ">
-                    <img className="logo mw3 pointer" src={Logo} alt="my brand" onClick={ () => scrollToTop } />
+                    <img className="logo mw3 pointer" src={Logo} alt="my brand" onClick={scrollToTop} />
                 </div>
                 <div className="w-70-m w-70-l tr-l tr-m tl f5-l f5-m f5 items-center dtc-l dtc-m dn ">
                     <ButtonGroup minimal={true} >

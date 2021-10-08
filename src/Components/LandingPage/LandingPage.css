@@ -14,22 +14,20 @@ a.btn {
 	font-weight: bold;
 	text-align: center;
 	background-color: #fafafa;
-  border-color: whitesmoke !important;
+	border-color: whitesmoke !important;
 	opacity: 1;
 	transition: all 400ms;
 }
 
 a.btn:hover {
-	background-color: #e4e8e5; /* btn hover korar color change korte hobe */
-  color: black !important;
-  border: solid 5px black;
-  font-size: 15px;
-  font-weight: 700;
+	background-color: #e4e8e5;
+	/* btn hover korar color change korte hobe */
+	color: black !important;
+	border: solid 5px black;
+	font-size: 15px;
+	font-weight: 700;
 }
 
-a.btn:focus {
-  outline: none !important;
-}
 
 section {
 	display: flex;
@@ -37,6 +35,7 @@ section {
 	align-items: center;
 	/* padding: 100px 80px; */
 }
+
 /* 
 @media (max-width: 800px) {
 	section {
@@ -107,15 +106,12 @@ section {
 	.hero {
 		min-height: 600px;
 	}
-
 	.hero h1 {
 		font-size: 48px;
 	}
-
 	.hero h3 {
 		font-size: 24px;
 	}
-
 	.hero a.btn {
 		padding: 15px 40px;
 	}

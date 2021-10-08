@@ -1,6 +1,7 @@
 section {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row !important;
   justify-content: center;
   align-content: center;
 }
