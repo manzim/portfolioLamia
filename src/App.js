@@ -40,7 +40,7 @@ function App() {
         style = {{ 
           height: 40, 
           display: showScroll ? 'flex' : 'none', 
-          right: -160 
+          right: 0 
         }}
       />
 

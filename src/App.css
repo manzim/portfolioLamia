@@ -26,6 +26,12 @@ hr {
   background-size: cover;
 }
 
+@media (max-width: 768px) {
+  .scrollTop {
+    right: -160 !important;
+  }
+}
+
 .scrollTop {
   position: fixed; 
   width: 100%;

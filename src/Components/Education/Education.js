@@ -101,20 +101,21 @@ function Education() {
                 <h2 className="ttu b tc underline f1 white">Education</h2>
                 <div className="f5 center mb3">
                     {Edu.map((edu, index) => (
-                        <div key={index} className="_educard_ grow cf bp3-card br5 shadow-5 flex-l bg-black-10 flex-m items-center-l items-center-m mb2 shadow-5">
-                            <div className="fl f3  w-100 w-50-m w-25-l b tc-l tc-m tl pv2">
+                        <div key={index} className="_educard_ grow cf bp3-card br5 shadow-5 flex-l bg-black-10 
+                            flex-m items-center-l items-center-m mb2 shadow-5">
+                            <div className="fl f5 w-100 w-50-m w-20-l b tl-l tc-m tl pv2">
                                 {edu.Degree}
                             </div>
-                            <div className="fl f5  w-100 w-50-m w-40-l b tc-l tc-m tl ">
+                            <div className="fl f5 w-100 w-50-m w-40-l b tl-l tc-m tl ">
                                 {edu.Institution}
                             </div>
-                            <li className="fl f5  w-100 w-50-m w-20-l tc-l tc-m tl ">
+                            <li className="fl f5 w-100 w-50-m w-20-l tl-l tc-m tl ">
                                 {edu.timeline}
                             </li>
                             {edu.CGPA ?
-                                <li className="fl f5  w-100 w-50-m w-20-l tc-l tc-m tl ">
+                                <li className="fl f5 w-100 w-50-m w-20-l tl-l tc-m tl ">
                                     GPA/CGPA: {edu.CGPA}
-                                </li> : ''
+                                </li> : ' '
                             }
                         </div>
                     ))
