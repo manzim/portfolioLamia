@@ -153,11 +153,10 @@ function Navbar() {
                         >
                             <div className="tr fr mb3 " >
                                 <Icon
-                                    className="tr fr mt5"
+                                    className="pa4 tr fr mt5"
                                     icon="cross"
                                     color="black"
                                     size={50}
-                                    className="pa4"
                                     onClick={() => setOpen(!open)}
                                 />
                             </div>
