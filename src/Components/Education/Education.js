@@ -72,7 +72,7 @@ function Education() {
                     <div className="center flex-l flex-m flex-row-l justify-around pa2 f5 pl0">
                         <a href='/#contactme'
                             className="center list pa2 pa0-l pa0-m w-50 w-90-l w-90-m link no-underline">
-                            <Button className="pa2 mb2 mb0-l mb0-m w-100 w-80-l w-80-m _hiremebtn_" text="hire me" intent="none" />
+                            <Button className="pa2 mb2 mb0-l mb0-m w-100 w-80-l w-80-m _hiremebtn_ black" text="Hire Me" intent="none" />
                         </a>
 
                         <a href='https://drive.google.com/file/d/1vb0ct_jei6Ufmt6JdZfe5KUfGICYPUDr/view?usp=sharing'

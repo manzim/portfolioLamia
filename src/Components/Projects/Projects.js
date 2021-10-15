@@ -26,7 +26,7 @@ function Projects() {
             projectname: "Weather App",
             githublink: 'https://github.com/manzim/todolistmodified',
             videolink: 'https://drive.google.com/file/d/1L_wLxn0fYDkbSkBnBXtIKFTb2YsJOGJn/view?usp=sharing',
-            watchlive: 'https://quirky-einstein-faa414.netlify.app/'
+            watchlive: ''
         },
         {
             img: rps,
@@ -40,7 +40,7 @@ function Projects() {
             projectname: "tic tac toe",
             githublink: 'https://github.com/manzim/tictactoegame',
             videolink: 'https://drive.google.com/file/d/1NotUczbN0Mk4g2tqb0ZVOLX53FxwwGad/view?usp=sharing',
-            watchlive: 'https://rockpapperscissorgame.herokuapp.com/'
+            watchlive: ''
         },
         {
             img: jobtracker,
@@ -51,14 +51,14 @@ function Projects() {
         },
         {
             img: ecommerce,
-            projectname: "eCommerce (active)",
+            projectname: "eCommerce (on going)",
             githublink: '',
             videolink: '',
             watchlive: ''
         },
         {
             img: memories,
-            projectname: "memories (active)",
+            projectname: "memories (on going)",
             githublink: '',
             videolink: '',
             watchlive: ''

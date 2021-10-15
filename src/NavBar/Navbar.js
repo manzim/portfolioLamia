@@ -1,4 +1,5 @@
-import { Button, ButtonGroup, Divider, Drawer, Icon } from '@blueprintjs/core';
+import { Button, ButtonGroup, Divider, Drawer, Icon, Menu, MenuItem } from '@blueprintjs/core';
+
 import React, { useState, } from 'react'
 import { useHistory } from 'react-router';
 
@@ -6,6 +7,7 @@ import '../Externalcss/Externalcss.css'
 import '../NavBar/Navbar.css'
 import Logo from '../Assets/logo/mylogo.png'
 import mobileLogo from '../Assets/logo/brandlogo.png'
+import { Popover2 } from '@blueprintjs/popover2';
 
 function Navbar() {
 
@@ -23,22 +25,22 @@ function Navbar() {
     const [showNavBar, setShowNavBar] = useState('')
 
     const checkScrollTop = () => {
-      if (!showNavBar && window.pageYOffset > 300) {
-        setShowNavBar('fixed')
-      }
-      else if (showNavBar && window.pageYOffset <= 400) {
-        setShowNavBar('none')
-      }
+        if (!showNavBar && window.pageYOffset > 400) {
+            setShowNavBar('fixed')
+        }
+        else if (showNavBar && window.pageYOffset <= 400) {
+            setShowNavBar('none')
+        }
     }
-    
+
     window.addEventListener('scroll', checkScrollTop)
 
     return (
         <section>
             <div className="cf white dt dt--fixed w-100 shadow-1 pa2 flex items-center center-l center-m w-100 h3-l h3-m h6"
-                style= {{ 
-                    position: showNavBar === 'fixed' ? 'none' : 'fixed', 
-                    top: showNavBar === 'fixed' ? 0 : '', 
+                style={{
+                    position: showNavBar === 'fixed' ? 'none' : 'fixed',
+                    top: showNavBar === 'fixed' ? 0 : '',
                     // marginTop: showNavBar === 'fixed' ? '' : '5rem',
                     alignItems: "center",
                     width: "100%",
@@ -124,6 +126,51 @@ function Navbar() {
                             />
                         </a>
 
+
+                        <Popover2
+                            content={
+                                <>
+                                    <Menu key="menu">
+                                        <MenuItem icon="camera" text="FoodGraphy"></MenuItem>
+                                        <MenuItem icon="lifesaver" text="Fantasy Premier League">
+                                            <a
+                                                href="https://fantasy.premierleague.com/entry/3416195/event/7"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                <MenuItem icon="chart" text="Team 1" />
+                                            </a>
+                                            <a
+                                                href="https://fantasy.premierleague.com/entry/7661/event/7"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                <MenuItem icon="chart" text="Team 2" /></a>
+                                            <a
+                                                href="https://fantasy.premierleague.com/entry/3416195/event/7"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                <MenuItem icon="chart" text="Team 3" />
+                                            </a>
+                                        </MenuItem>
+                                        <MenuItem icon="dollar" text="Paid Promotion" disabled={true} />
+                                    </Menu>
+                                </>
+                            }
+                            position="bottom"
+                            interactionKind="hover"
+                            autoFocus={false}
+                        >
+                            <Button
+                                text="vivid..."
+                                minimal
+                                large={false}
+                                className="b f5 white _btn_"
+                                intent="none"
+                                icon="share"
+                            />
+                        </Popover2>
                     </ButtonGroup>
                 </div>
                 <div className="w-20 tr f5-l f5-m f5 items-center dn-l dn-m dtc">
@@ -151,9 +198,9 @@ function Navbar() {
                             position={"left"}
                             hasBackdrop={true}
                         >
-                            <div className="tr fr mb3 " >
+                            <div className="tr fr " >
                                 <Icon
-                                    className="pa4 tr fr mt5"
+                                    className="pa4 tr fr mt2"
                                     icon="cross"
                                     color="black"
                                     size={50}
@@ -161,7 +208,7 @@ function Navbar() {
                                 />
                             </div>
 
-                            <div className="logo_img tc center mb3 mt2" style={{ opacity: 1 }}>
+                            <div className="logo_img tc center mb2 " style={{ opacity: 1 }}>
                                 <img
                                     className="tc center w-80"
                                     src={mobileLogo}
@@ -225,6 +272,25 @@ function Navbar() {
 
                                         >
                                             Contact
+                                        </a>
+                                    </li>
+                                    <li className="b f4 lh-copy" >
+                                        <a
+                                            href="/foodgraphy"
+                                            className="f5 pr3 black-80 list link"
+
+                                        >
+                                            FoodGraphy
+                                        </a>
+                                    </li>
+                                    <li className="b f4 lh-copy" >
+                                        <a
+                                            href="https://fantasy.premierleague.com/entry/3416195/event/7"
+                                            target="_blank" rel="noreferrer"
+                                            className="f5 pr3 black-80 list link"
+
+                                        >
+                                            Fantasy Premier League 
                                         </a>
                                     </li>
                                 </ul>

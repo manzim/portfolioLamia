@@ -1,21 +1,20 @@
 {
   "name": "portfoliolamia",
-  "version": "0.1.0",
+  "version": "1.1.1",
   "private": true,
   "dependencies": {
     "@blueprintjs/core": "^3.49.0",
+    "@blueprintjs/popover2": "^0.12.5",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
-    "react-particles-js": "^3.5.3",
     "react-router-dom": "^5.2.1",
     "react-scripts": "4.0.3",
     "react-tilt": "^0.1.4",
     "tachyons": "^4.12.0",
-    "tsparticles": "^1.34.0",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
