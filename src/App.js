@@ -12,6 +12,7 @@ import Skillset from './Components/Skills/Skill'
 import Expereince from './Components/Experience/Expereince';
 import Projects from './Components/Projects/Projects';
 import { Icon } from '@blueprintjs/core';
+import Ielts from './Components/HigherStudy/Ielts';
 
 function App() {
 
@@ -64,6 +65,7 @@ function App() {
         <Expereince />
         <Skillset />
         <Projects />
+        <Ielts />
         <Contact />
         <Footer />
       </div>

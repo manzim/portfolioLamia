@@ -1,7 +1,18 @@
-a {
-  color: #ffffff !important;
+.a {
+  color: #fff !important;
   text-decoration: none !important;
 }
+
+a:visited{
+  color:white !important;
+}
+a:focus{
+  color:white !important;
+}
+a:active{
+  color:white !important;
+}
+
 ._name_ {
   color: white !important;
 }

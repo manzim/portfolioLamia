@@ -3,7 +3,6 @@ import React from 'react'
 
 import { Divider } from '@blueprintjs/core'
 
-import './Contact.css'
 import { FaEnvelope, FaGithub, FaLinkedin, FaFacebook, FaTwitter, FaYoutube, FaStackOverflow } from 'react-icons/fa'
 
 function Contact() {

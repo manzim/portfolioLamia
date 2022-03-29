@@ -1,0 +1,15 @@
+.container {
+    width: auto;
+    height: auto;
+    margin: 0;
+    
+}
+
+.container .box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    margin: 15px;
+    border-radius: 10px;
+}

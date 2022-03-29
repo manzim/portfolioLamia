@@ -31,4 +31,5 @@ a:active {
 ._icon_:hover {
     background-color: aqua !important;
     border-radius: 15px;
+    text-decoration: none !important;
 }

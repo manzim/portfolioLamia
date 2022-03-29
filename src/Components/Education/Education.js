@@ -12,7 +12,7 @@ function Education() {
             Degree: 'MBA Professionals',
             Institution: "Bangladesh University of Professionals",
             timeline: '2021 to Present',
-            CGPA: '3.79',
+            CGPA: '3.83',
         },
         {
             Degree: 'B.Sc Engineering',

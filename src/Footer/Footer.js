@@ -12,7 +12,8 @@ function Footer() {
                             href="https://www.linkedin.com/in/ahmed-manzim-ridwan/"
                             target="_blank"
                             rel="noreferrer"
-                            className="_name_"
+                            className="_name_ white"
+                            style={{ textdecoration: 'none', color: 'white' }}
                         >
                             {' '} manzim {' '}
                         </a>

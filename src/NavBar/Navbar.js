@@ -131,10 +131,15 @@ function Navbar() {
                             content={
                                 <>
                                     <Menu key="menu">
-                                        <MenuItem icon="camera" text="FoodGraphy"></MenuItem>
-                                        <MenuItem icon="lifesaver" text="Fantasy Premier League">
+
+                                        <MenuItem icon="camera" text="FoodGraphy" 
+                                            onClick={() => window.open('https://drive.google.com/drive/folders/1xdCVMEfRjH7KQCLSs6jDm8a3ulvTeuNn?usp=sharing') }
+                                        >
+                                        </MenuItem>
+                                        {/* <MenuItem icon="document-share" text="IELTS" onClick={history.push('#ielts')}></MenuItem> */}
+                                        {/* <MenuItem icon="lifesaver" text="Fantasy Premier League">
                                             <a
-                                                href="https://fantasy.premierleague.com/entry/3416195/event/7"
+                                                href=""
                                                 target="_blank"
                                                 rel="noreferrer"
                                             >
@@ -153,7 +158,7 @@ function Navbar() {
                                             >
                                                 <MenuItem icon="chart" text="Team 3" />
                                             </a>
-                                        </MenuItem>
+                                        </MenuItem> */}
                                         <MenuItem icon="dollar" text="Paid Promotion" disabled={true} />
                                     </Menu>
                                 </>
@@ -290,7 +295,7 @@ function Navbar() {
                                             className="f5 pr3 black-80 list link"
 
                                         >
-                                            Fantasy Premier League 
+                                            Fantasy Premier League
                                         </a>
                                     </li>
                                 </ul>
