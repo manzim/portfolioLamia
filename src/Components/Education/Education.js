@@ -12,27 +12,26 @@ function Education() {
             Degree: 'MBA Professionals',
             Institution: "Bangladesh University of Professionals",
             timeline: '2021 to Present',
-            CGPA: '3.83',
+            CGPA: '3.83/4',
         },
         {
             Degree: 'B.Sc Engineering',
             Institution: "Rajshahi University of Engineering & Technology",
             timeline: '2013 ~ 2018',
-            CGPA: '',
+            CGPA: '2.66/4',
         },
         {
             Degree: 'HSC',
             Institution: "Pabna Cadet College",
             timeline: '2010 ~ 2012',
-            CGPA: '5',
+            CGPA: '5/5',
         },
         {
             Degree: 'SSC',
             Institution: "Pabna Cadet College",
             timeline: '2009 ~ 2010',
-            CGPA: '5',
+            CGPA: '5/5',
         }
-
     ]
 
     return (

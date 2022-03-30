@@ -51,14 +51,14 @@ function Projects() {
         },
         {
             img: ecommerce,
-            projectname: "eCommerce (on going)",
+            projectname: "Content Management",
             githublink: '',
             videolink: '',
-            watchlive: ''
+            watchlive: 'https://www.facebook.com/nibashbd/'
         },
         {
             img: memories,
-            projectname: "memories (on going)",
+            projectname: "Portfolio (Ongoing)",
             githublink: '',
             videolink: '',
             watchlive: ''
@@ -68,14 +68,13 @@ function Projects() {
 
     return (
         <section id="projects">
-
-            <h2 className="b white underline ttu mt5 mb3 center tc f2">Projects </h2>
+            <h2 className="b white underline ttu mt5 mb3 center tc f2">Personal Projects </h2>
             <section class="projects" id="projects">
                 {projectsdone.map((project, index) => (
                     <div key={index} class="team" >
-                        <img src={project.img} alt={project.projectname} className="h3" />
+                        <img src={project.img} alt={project.projectname} className="f4" />
                         <div class="info">
-                            <div class="name"> {project.projectname} </div>
+                            <div className="name f5"> {project.projectname} </div>
                             {/* <div class ="title">CEO and Founder</div> */}
                             <div class="social">
                                 {project.githublink ?
